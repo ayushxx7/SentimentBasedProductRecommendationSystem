@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Recommendation</title>
+  </head>
+  <body>
+      <h1 style='text-align:center;'>Sentiment based Product Recommendation</h1>
+      <hr>
+      <br>
+    <form method='POST' action='/predict'>
+        <label class="label" for="input">Enter User Name</label>
+        <input class="input" type="text" id="input" name='user'>
+        <input type='submit'>
+    </form>
+    <br>
+      <hr>
+
+    {% if recommendation %}
+    <br>Top 5 Recommended Products for <b>{{user}}</b></br>
+    <br><br>
+    {{recommendation|safe}}
+    {% endif %}
+
+    <br><br>
+    <hr>
+    <h3>How it Works?</h3>
+    <p>
+        Enter the name of one of the users present in the dataset and hit submit. If the name exists,
+        <ul>
+        <li>We will first find top 20 recommended products based on what other users similar to the current one have bought in the past.</li>
+        <!-- <br> -->
+        <li>Then, we will filter out top 5 products out of those by classifying the sentiments of the reviews that the products have received.</li>
+
+        <br>
+  </body>
+</html>
