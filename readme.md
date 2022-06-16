@@ -5,8 +5,14 @@
 1. Improving the recommendations using the sentiment analysis model
 1. Deploying the end-to-end project with a user interface
 
+## App Live on `Heroku`
+- [App Link](https://product-recommendation97.herokuapp.com/)
+
+## Screenshot
+![Product Recommendation](product-recommendation.png)
+
 ### Dataset 
-https://cdn.upgrad.com/uploads/production/c2504c0d-6080-4e1e-8d4c-852b3e68a0ed/sample30.csv
+[Dataset Link](https://cdn.upgrad.com/uploads/production/c2504c0d-6080-4e1e-8d4c-852b3e68a0ed/sample30.csv)
 
 This dataset consists of 30,000 reviews for more than 200 different products. The reviews and ratings are given by more than 20,000 users. 
 
