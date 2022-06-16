@@ -11,6 +11,22 @@
 ## Screenshot
 ![Product Recommendation](product-recommendation.png)
 
+## Assets
+
+| Filename             | What it is                                              | Type              |
+|----------------------|---------------------------------------------------------|-------------------|
+| mnb.gz               | Sentiment Classification Model (Multinomal Naive Bayes) | sklearn model     |
+| dataset.gz           | The training dataset for User Recommendation model      | pandas dataframe  |
+| user_final_rating.gz | User based Product Recommendation Engine                | pandas dataframe  |
+| vectorizer.gz        | Vectorizer for converting product reviews to vectors    | TF-IDF Vectorizer |
+| app.py               | Flask App for providing prediction endpoint             | python file       |
+| model.py             | Product recommendations are generated from this file    | python file       |
+| capstone.ipynb       | jupyter notebook used for EDA and model building        | jupyter notebook  |
+| templates/index.html | frontend code to get user input and display predictions | HTML file         |
+
+## Source Code on `GitHub`
+- [GitHub Link](https://github.com/ayushxx7/SentimentBasedProductRecommendationSystem)
+
 ### Dataset 
 [Dataset Link](https://cdn.upgrad.com/uploads/production/c2504c0d-6080-4e1e-8d4c-852b3e68a0ed/sample30.csv)
 
